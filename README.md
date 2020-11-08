@@ -23,7 +23,7 @@
 
 
 ## 六、实验结果
-![实验结果]()
+![实验结果](https://github.com/bobo848/Java3/blob/main/%E5%AE%9E%E9%AA%8C%E5%9B%9B%E7%BB%93%E6%9E%9C.JPG)
 
 
 ## 七、实验感想
