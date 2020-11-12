@@ -17,9 +17,50 @@
 4.实例化研究生类时，可采用运行时通过main方法的参数args一次性赋值，也可采用Scanner类实现运行时交互式输入。  
 5.根据输入情况，要在程序中做异常处理。  
 ## 四、实验过程
-
-
+1.首先创建一个package：interfaceApplication。    
+2.在包中创建两个接口StudentManagement和TeacherManagement，分别设定博士研究生作为学生和助教的两类行为标准。   
+3.并在包中实例化一个类DoctoralCandidate来实现上述两个接口。实例化一个MoneyException异常类来进行对收税金的判断。实例化主类Test_JavaProgram对用户输入进行存储和操作。    
+4.StudentManagement类中：**    
+*(a)定义常量buzhu    
+(b)设计两个方法：缴纳学费和查询学费*  
+5.TeacherManagement类中：**  
+*(a)定义常量sanxianyijin  
+(b)设计两个方法：查询工资和发放工资*  
+6.DoctoralCandidate类中：**  
+*(a)定义基本信息变量  
+(b)实现两个接口四个方法*    
+7.Test_JavaProgram类中：**  
+*(a)首先定义全局变量和录入数组  
+(b)设计三个循环：第一个循环依次录入个人信息，第二个循环判断录入工资和学费是否正确，第三个循环执行方法操作  
+(c)设计税收算法方法    
+(d)设计异常抛出方法*  
+8.MoneyException类中：**  
+*(a)创建 MoneyException类为Exception类子类  
+(b)创建 warnMess方法用来返回错误提示*  
 ## 五、核心代码
+1.学费查询方法***  
+```
+public void searchTuition(double tuition) {
+		tuition=tuition-buzhu;
+		System.out.println("本学期学费："+tuition);
+		System.out.println("本学年学费："+2*tuition);
+	}
+``` 
+2.工资查询方法***
+```
+public void searchSalary(double salary,double revenue) {                       
+		System.out.println("工资："+(salary-revenue));
+		System.out.println("年实际工资："+12*(salary-revenue));
+	}
+``` 
+3.工资发放方法***
+```
+public void giveSalary(double salary,double revenue) {
+		account=account+(salary-revenue);
+		System.out.println("操作成功！");
+		System.out.println("账户余额："+account);
+	}
+```
 
 
 ## 六、实验结果
@@ -27,6 +68,11 @@
 
 
 ## 七、实验感想
+通过本次实验，我学会了接口和方法的使用，回顾了数组的声明和使用   
+了解了异常和异常处理的方法   
+了解了自己得许多不足之处  
+在以后的实验中一定会早日完成  
+
 
 
 
